@@ -19,7 +19,7 @@ export const Register = () => {
     evt.preventDefault();
 
     axios
-      .post('http://192.168.100.153:5000/user/register', {
+      .post('http://localhost:5000/user/register', {
         user_name: nameRef.current.value,
         phone: phoneRef.current.value,
         email: emailRef.current.value,

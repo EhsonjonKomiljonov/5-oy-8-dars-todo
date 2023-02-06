@@ -17,7 +17,7 @@ export const Login = () => {
     evt.preventDefault();
 
     axios
-      .post('http://192.168.100.153:5000/user/login', {
+      .post('http://localhost:5000/user/login', {
         email: emailRef.current.value,
         password: passwordRef.current.value,
       })

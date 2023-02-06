@@ -35,7 +35,7 @@ export const TodoList = () => {
   const handleDelete = (todoId) => {
     const filteredTodo = todos.filter((todo) => {
       if (todo.id === todoId) {
-        fetch(`http://192.168.100.153:5000/todo/${todo.id}`, {
+        fetch(`http://localhost:5000/todo/${todo.id}`, {
           method: "DELETE",
           headers: {
             Authorization: token,

@@ -27,7 +27,7 @@ export const PrivateHome = () => {
   const handleTodo = (evt) => {
     evt.preventDefault();
 
-    fetch("http://192.168.100.153:5000/todo", {
+    fetch("http://localhost:5000/todo", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
